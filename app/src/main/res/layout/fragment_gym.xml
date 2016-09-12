@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <LinearLayout
+            android:layout_width=".0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight=".9">
+
+            <TextView
+                android:id="@+id/gym_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Title"
+                android:textAppearance="?attr/textAppearanceListItem"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gym_address"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Via"
+                android:textAppearance="?attr/textAppearanceListItemSmall" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/ic_state"
+            android:layout_width=".0dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_keyboard_arrow_right_24dp"
+            android:scaleType="fitXY"
+            android:layout_weight=".1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#BEBEBE"
+        android:orientation="horizontal"></LinearLayout>
+</LinearLayout>

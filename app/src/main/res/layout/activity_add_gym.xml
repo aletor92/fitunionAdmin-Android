@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_nome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="#acacac"
+        android:textColor="#FFF"
+        android:hint="Nome"
+        android:singleLine="true"
+        android:imeOptions="actionNext"
+        app:met_textColorHint="@color/hint_color"
+        app:met_floatingLabel="normal" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_indirizzo"
+        android:layout_width="match_parent"
+        app:met_textColorHint="@color/hint_color"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColorHint="#acacac"
+        android:textColor="#FFF"
+        android:hint="Indirizzo"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+
+        app:met_floatingLabel="normal" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_telefono"
+        android:layout_width="match_parent"
+        android:textColorHint="#acacac"
+        android:textColor="#FFF"
+        android:layout_height="wrap_content"
+        app:met_textColorHint="@color/hint_color"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:imeOptions="actionNext"
+        android:hint="Telefono"
+        android:singleLine="true"
+        app:met_floatingLabel="normal" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_prezzo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:imeOptions="actionNext"
+        android:hint="Prezzo annuale"
+        app:met_textColorHint="@color/hint_color"
+        android:singleLine="true"
+        android:textColorHint="#acacac"
+        android:textColor="#FFF"
+        app:met_floatingLabel="normal" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/et_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Indirizzo email"
+        android:textColor="#FFF"
+        app:met_textColorHint="@color/hint_color"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        app:met_floatingLabel="normal" />
+
+</LinearLayout>
